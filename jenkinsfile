@@ -6,7 +6,7 @@ pipeline{
     stages{
        stage('Deploy to phpDemo'){
            steps{
-               sh 'scp ${WORKSPACE}/*' root@${staging_server}:/home/ubuntu/phpdemo/'
+               sh 'scp ${WORKSPACE}/* root@${staging_server}:/home/ubuntu/phpdemo/'
            }    
        }  
   }
