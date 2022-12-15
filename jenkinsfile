@@ -1,12 +1,12 @@
 pipeline{
     agent any
     environment{
-        staging_server="3.110.119.93"
+        staging_server="3.111.168.219"
     
     stages{
        stage('Deploy to phpDemo'){
            steps{
-               sh 'scp ${WORKSPACE}/*' root@${staging}:/home/ubuntu/phpdemo/'
+               sh 'scp ${WORKSPACE}/*' root@${staging_server}:/home/ubuntu/phpdemo/'
            }    
        }  
   }
