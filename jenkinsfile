@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        staging_server="3.110.119.93"
+        staging_server="35.154.207.110"
     }
     stages{
        stage('Deploy to phpDemo'){
